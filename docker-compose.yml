@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  numba101:
+    image: numba101
+    build:
+      context: .
+      dockerfile: ./Dockerfile
