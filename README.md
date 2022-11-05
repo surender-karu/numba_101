@@ -11,10 +11,18 @@ docker build --pull --rm -f "Dockerfile" -t numba101:latest "."
 >> docker run --rm -it --gpus all numba101:latest
 ```
 
-On Windows:
+On Windows to run locally (requires a GPU with CUDA support):\
+> Install [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) \
+> Create a virtual environment using conda (make sure path is updated)
 ```
 # PowerShell
->> virtualenv .venv
->> .\.venv\Scripts\activate.ps1
->> pip install --upgrade numba
+>> conda create -n numba_env
+# Conda init to initialize conda with powershell for first use.
+>> conda init
+>> conda activate numba_env
+# Install packages from requirements.txt
+>> conda install --file .\requirements.txt
+# Validate installation
+>> python.exe .\matrix.py
+
 ```
