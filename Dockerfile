@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.0-base-ubuntu20.04
+FROM nvidia/cuda:11.0.3-base-ubuntu20.04
 LABEL Name=numba101 Version=0.0.1
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
