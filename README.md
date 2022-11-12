@@ -6,7 +6,7 @@ For docker support requires NVIDIA container support [Container Toolkit](https:/
 
 ```
 # Build the container
-docker build --pull --rm -f "Dockerfile" -t numba101:latest "." 
+>> docker build --pull --rm -f "Dockerfile" -t numba101:latest "." 
 # Launch container with gpu support.
 >> docker run --rm -it --gpus all numba101:latest
 ```
