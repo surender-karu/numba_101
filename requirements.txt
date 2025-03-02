@@ -1,2 +1,5 @@
-numba
-cudatoolkit
+numba::numba
+# cudatoolkit
+# cuda-nvcc
+# cuda-nvrtc
+# nvidia::cuda-python
